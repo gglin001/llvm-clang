@@ -3,6 +3,9 @@
 LLVM_SHA="release/20.x"
 LLVM_REPO="https://github.com/llvm/llvm-project.git"
 
+# local path example
+# LLVM_REPO="file:///Users/allen/repos/_compiler/llvm-project"
+
 git clone -n --depth=1 --filter=tree:0 $LLVM_REPO llvm-project
 pushd llvm-project
 git sparse-checkout set --no-cone \
